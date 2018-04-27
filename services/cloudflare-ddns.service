@@ -1,0 +1,6 @@
+[Unit]
+Description=Update DNS entry for this host to current IP
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh /usr/local/bin/cloudflare-ddns.sh
